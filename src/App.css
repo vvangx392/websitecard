@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.App-Container {
+  color:purple;
+  text-align: center;
+}
+.container{
+  Background-imge: url(./assets/photo-1548346941-0f485f3ec808.jfif);
+}
