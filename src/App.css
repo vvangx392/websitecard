@@ -1,19 +1,9 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -28,18 +18,46 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
 .App-Container {
   color:purple;
   text-align: center;
 }
-.container{
-  Background-imge: url(./assets/photo-1548346941-0f485f3ec808.jfif);
+.h1 {
+  background-color:#191970;
+  text-align: center;
+
+}
+.background {
+  background-image: url(./assets/blue-water-wallpaper-1426718.jpg);
+  resize: cover;
+  width: 100%;
+  height: 200%;
+  margin:0px;
+  margin-left:20px;
+  margin-right:20px;
+  background-position: center;
+
+
+}
+.Navbar {
+  margin:0px;
+  margin-right:0px;
+  padding-left:0;
+  padding-right:0;
+
+}
+.timer {
+  font-size: large;
+  color:white;
+  border-style: solid;
+  border-color: orange;
+  margin:auto;
+  
+  
+}
+.timercontainer {
+  text-align: center;
+  
 }

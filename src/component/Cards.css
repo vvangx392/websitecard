@@ -1,0 +1,14 @@
+.Card {
+    float: right;
+}
+.form-container {
+    margin-left: 0;
+}
+.jira-map {
+    position: absolute;
+    right: 0;
+}
+.main-card {
+    min-width:100%;
+    position: relative;
+}
