@@ -4,8 +4,36 @@ import "./Cards.css";
 import { Card, CardImg, CardText, CardTitle, CardSubtitle } from "reactstrap";
 import { CardBody, Button } from "reactstrap";
 import Form from "react-bootstrap/Form";
+import TableTemplate from './tabletemplate';
+import Charttemplate from "./charttemplate";
+
+
 
 class Cards extends Component {
+  jiracomplete = [
+    {
+      jiraNumber: '5432',
+      jiraTitle: 'qhaskldas',
+      status: 'Complete'
+    },
+    {
+      jiraNumber: '9876',
+      jiraTitle: 'jklwlqkeqw',
+      status: 'Complete'
+    }
+  ];
+  jiradata = [
+  {
+    jiraNumber: '1234',
+    jiraTitle: 'jititle',
+    status: 'Complete'
+  },
+  {
+    jiraNumber: '111',
+    jiraTitle: 'jitidfdfdtle',
+    status: 'In Progress'
+  }
+];
   render() {
     return (
       <div className="main-card">
@@ -55,53 +83,26 @@ class Cards extends Component {
             </div>
             <div className="col-md-4 jira-map">
               <Card>
-                <CardImg
-                  top
-                  width="100%"
-                  src="/assets/318x180.svg"
-                  alt="Card image cap"
-                />
                 <CardBody>
-                  <CardTitle>Total Sprint</CardTitle>
-                  <CardSubtitle>Card subtitle</CardSubtitle>
-                  <CardText>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </CardText>
+                  <CardTitle>Upcoming</CardTitle>
+                  
+                 <TableTemplate value={this.jiradata}/>
                 </CardBody>
               </Card>
 
               <Card>
-                <CardImg
-                  top
-                  width="100%"
-                  src="/assets/318x180.svg"
-                  alt="Card image cap"
-                />
                 <CardBody>
-                  <CardTitle>Sprint to do</CardTitle>
-                  <CardSubtitle>Card subtitle</CardSubtitle>
-                  <CardText>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </CardText>
+                  <CardTitle>Completed</CardTitle>
+                  
+                  <TableTemplate value={this.jiracomplete}/>
                 </CardBody>
               </Card>
 
               <Card>
-                <CardImg
-                  top
-                  width="100%"
-                  src="/assets/318x180.svg"
-                  alt="Card image cap"
-                />
                 <CardBody>
                   <CardTitle>Graph</CardTitle>
-                  <CardSubtitle>Card subtitle</CardSubtitle>
-                  <CardText>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </CardText>
+                  
+                 <Charttemplate />
                 </CardBody>
               </Card>
             </div>
