@@ -30,15 +30,13 @@
 
 }
 .background {
-  background-image: url(./assets/blue-water-wallpaper-1426718.jpg);
-  resize: cover;
+  background-image: url(./assets/affinity_plus_duluth.jpg);
+  background-size: cover;
+  position: fixed;
   width: 100%;
-  height: 200%;
-  margin:0px;
-  margin-left:20px;
-  margin-right:20px;
+  height: 100%;
   background-position: center;
-
+  
 
 }
 .Navbar {
@@ -61,3 +59,48 @@
   text-align: center;
   
 }
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
